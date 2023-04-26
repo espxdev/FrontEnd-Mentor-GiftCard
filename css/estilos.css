@@ -5,6 +5,8 @@
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
   --font-primary: "Kumbh Sans";
+  --bg-top: url("../images/bg-pattern-top.svg");
+  --bg-bot: url("../images/bg-pattern-bottom.svg");
 }
 
 html {
@@ -19,7 +21,7 @@ html {
 body {
   font-family: var(--font-primary), sans-serif;
   background-color: var(--dark-cyan);
-  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-image: var(--bg-top), var(--bg-bot);
   background-repeat: no-repeat, no-repeat;
   background-position: right 40vw bottom 55vh, left 40vw top 55vh;
 }
